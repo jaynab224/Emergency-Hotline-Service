@@ -11,12 +11,9 @@ ANS:
 
 ## Qustion2: How do you create and insert a new element into the DOM?
 ANS:
+First create **Child Element** than **append child** to parent **id** name.
 
-```javascript
-const newDiv = document.createElement("div"); 
-newDiv.textContent = "Hello DOM!"; 
-document.body.appendChild(newDiv);
-```
+
 ##Qustion3: What is Event Bubbling and how does it work?
 ---
 ANS:
@@ -31,9 +28,8 @@ ANS:
 ##Question5: What is the difference between preventDefault() and stopPropagation() methods?
 ---
 ANS:
-**preventDefault()** → Prevents the browser's default action.
-**stopPropagation()** → Stops the event from propagating to parent elements.
-
+**preventDefault()** → Prevents the browser's **default** action.
+**stopPropagation()** → Stop the event from **propagating** to parent elements.
 
 
 
