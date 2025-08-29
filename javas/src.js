@@ -1,10 +1,10 @@
-// get element id
+
 function getElementId(id) {
   const element = document.getElementById(id);
   return element;
 }
 
-// love btn style
+// love btn part
 const loveBtn = document.getElementsByClassName("love_btn");
 for (let btn of loveBtn) {
   btn.addEventListener("click", function () {
@@ -15,7 +15,7 @@ for (let btn of loveBtn) {
   });
 }
 
-// call btn style
+// call btn part
 const callBtn = document.getElementsByClassName("call_btn");
 
 for (let btn of callBtn) {
@@ -37,7 +37,7 @@ for (let btn of callBtn) {
       alert("less than 20 coin try next time");
       return;
     }
-    // append child
+    // apnd child
     const date = new Date().toLocaleTimeString();
 
     const aside = getElementId("aside_section");
@@ -54,14 +54,14 @@ for (let btn of callBtn) {
             </div>`;
     aside_section.append(newAside);
 
-    // clear style
+    // clear part
     getElementId("clear_btn").addEventListener("click", function () {
       newAside.innerText = "";
     });
     alert("Calling" + " " + titel + " " + number);
   });
 }
-// text copy
+// text copy part
 const copyBtn = document.getElementsByClassName("copy_btn");
 
 for (let btn of copyBtn) {
